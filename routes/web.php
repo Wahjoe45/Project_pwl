@@ -72,3 +72,8 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::put('assign-user/{user}', [AssignUserToRoleController::class, 'update'])->name('assign.user.update');
     });
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('karyawan',KaryawanControllers::class);
