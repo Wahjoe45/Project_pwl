@@ -14,7 +14,8 @@ use App\Http\Controllers\RoleAndPermission\RoleController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\PegawaiControllers;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -75,4 +76,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     });
 });
 
-
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('pgw',PegawaiControllers::class);
