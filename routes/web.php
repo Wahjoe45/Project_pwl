@@ -75,7 +75,4 @@ Route::group(['middleware' => ['auth','verified']], function () {
     });
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::resource('karyawan',KaryawanControllers::class);
+
