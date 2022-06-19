@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PegawaiControllers;
+use App\Http\Controllers\ObatController;
 
 
 /*
@@ -80,3 +81,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('pgw',PegawaiControllers::class);
+
+Route::resource('obats', ObatController::class);
