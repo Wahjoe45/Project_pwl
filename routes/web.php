@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PegawaiControllers;
 use App\Http\Controllers\ObatController;
 use App\Http\Controllers\JadwalControllers;
-
+use App\Http\Controllers\KonsultasiControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,3 +86,5 @@ Route::resource('pgw',PegawaiControllers::class);
 Route::resource('obats',ObatController::class);
 
 Route::resource('jdwl',JadwalControllers::class);
+
+Route::resource('knsl',KonsultasiControllers::class);
