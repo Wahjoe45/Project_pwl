@@ -10,13 +10,13 @@
 
             <div class="pull-left">
 
-                <h2>Laravel 8 CRUD with Image Upload Example from scratch - ItSolutionStuff.com</h2>
+                <h2>Pemesanan Obat</h2>
 
             </div>
 
             <div class="pull-right">
 
-                <a class="btn btn-success" href="{{ route('obats.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('obats.create') }}"> Tambah Pesanan Obat</a>
 
             </div>
 
