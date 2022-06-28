@@ -44,11 +44,11 @@
 
             <th>No</th>
 
-            <th>Resep</th>
-
             <th>Nama</th>
 
             <th>Keterangan</th>
+
+            <th>Resep</th>
 
             <th width="280px">Action</th>
 

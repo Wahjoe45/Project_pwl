@@ -101,7 +101,7 @@ class ObatController extends Controller
 
         return redirect()->route('obats.index')
 
-                        ->with('success','Obat created successfully.');
+                        ->with('success','Pesanan Obat Berhasil Dibuat.');
 
     }
 
@@ -191,7 +191,7 @@ class ObatController extends Controller
 
         return redirect()->route('obats.index')
 
-                        ->with('success','Obat updated successfully');
+                        ->with('success','Pesanan Obat Berhasil Diupdate!');
 
     }
 
@@ -214,7 +214,7 @@ class ObatController extends Controller
 
         return redirect()->route('obats.index')
 
-                        ->with('success','Obat deleted successfully');
+                        ->with('success','Pesanan Obat Berhasil Dihapus');
 
     }
 
