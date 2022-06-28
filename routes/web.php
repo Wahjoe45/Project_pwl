@@ -48,7 +48,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     });
 
     Route::prefix('menu-management')->group(function () {
-        Route::resource('menu-group', MenuGroupController::class);
+        Route::resource('menu-group', PegawaiControllers::class);
         Route::resource('menu-item', MenuItemController::class);
     });
     Route::group(['prefix' => 'role-and-permission'], function () {
