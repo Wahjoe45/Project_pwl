@@ -38,13 +38,13 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/dashboard', function () {
         return view('home', ['users' => User::get(),]);
     });
-    //user list
 
+    //user list
     Route::prefix('user-management')->group(function () {
-        Route::resource('user', UserController::class);
-        Route::post('import', [UserController::class, 'import'])->name('user.import');
-        Route::get('export', [UserController::class, 'export'])->name('user.export');
-        Route::get('demo', DemoController::class)->name('user.demo');
+        Route::resource('obats', ObatController::class);
+        // Route::post('import', [UserController::class, 'import'])->name('user.import');
+        // Route::get('export', [UserController::class, 'export'])->name('user.export');
+        // Route::get('demo', DemoController::class)->name('user.demo');
     });
 
     Route::prefix('menu-management')->group(function () {

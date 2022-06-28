@@ -16,7 +16,7 @@
 
             <div class="pull-right">
 
-                <a class="btn btn-success" href="{{ route('obats.create') }}"> Tambah Pesanan Obat</a>
+                <a class="btn btn-success" href="{{ route('obats.create') }}">Tambah Pesanan Obat</a>
 
             </div>
 
