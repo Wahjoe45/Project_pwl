@@ -4,7 +4,7 @@
 <div class="row mt-5 mb-5">
     <div class="col-lg-12 margin-tb">
         <div class="float-left">
-            <h2>Create New Jadwal</h2>
+            <h2>Buat Jadwal Baru</h2>
         </div>
         <div class="float-right">
             <a class="btn btn-secondary" href="{{ route('jdwl.index') }}"> Kembali</a>

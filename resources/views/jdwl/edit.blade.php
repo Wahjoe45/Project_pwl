@@ -7,14 +7,14 @@
                 <h2>Edit Jadwal</h2>
             </div>
             <div class="float-right">
-                <a class="btn btn-secondary" href="{{ route('jdwl.index') }}"> Back</a>
+                <a class="btn btn-secondary" href="{{ route('jdwl.index') }}"> Kembali</a>
             </div>
         </div>
     </div>
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <strong>Whoops!</strong> Input Gagal.<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
