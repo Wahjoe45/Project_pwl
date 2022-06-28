@@ -17,7 +17,7 @@ class CreateKonsultasisTable extends Migration
             $table->id();
             $table->char('Nama');
             $table->text('Asal');
-            $table->text('TanggalKonsultasi');
+            $table->text('TanggalKonsul');
             $table->timestamps();
         });
     }

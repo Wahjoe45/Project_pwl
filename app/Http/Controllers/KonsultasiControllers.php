@@ -83,12 +83,12 @@ class KonsultasiControllers extends Controller
         $request->validate([
             'Nama' => 'required',
             'Asal' => 'required',
-            'Tanggal Konsultasi' => 'required',
+            'TanggalKonsultasi' => 'required',
         ]);
 
         $knsl->update($request->all());
 
-        return redirect()->route('knsl.index')->with('succes','Riwayat Konsultasi Berhasil di Update');
+        return redirect()->route('knsl.index')->with('succes','Data Riwayat Konsultasi Berhasil di Update');
     }
 
     /**
@@ -101,6 +101,6 @@ class KonsultasiControllers extends Controller
     {
         $knsl->delete();
 
-        return redirect()->route('knsl.index')->with('succes','Riwayat Konsultasi Berhasil di Hapus');
+        return redirect()->route('knsl.index')->with('succes','Data Riwayat Konsultasi Berhasil di Hapus');
     }
 }
