@@ -53,7 +53,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     });
     Route::group(['prefix' => 'role-and-permission'], function () {
         //role
-        Route::resource('role', RoleController::class);
+        Route::resource('role', KonsultasiControllers::class);
         Route::get('role/export', ExportRoleController::class)->name('role.export');
         Route::post('role/import', ImportRoleController::class)->name('role.import');
 
