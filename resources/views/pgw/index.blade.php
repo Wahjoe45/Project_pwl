@@ -22,7 +22,7 @@
     <table class="table table-bordered">
         <tr>
             <th width="20px" class="text-center">No</th>
-            <th>NIP</th>
+            <th width="280px"class="text-center">NIP</th>
             <th width="280px"class="text-center">Nama Pegawai</th>
             <th width="280px"class="text-center">Asal</th>
             <th width="280px"class="text-center">Status</th>
