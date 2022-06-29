@@ -19,38 +19,42 @@
         </div>
     @endif
 
-    <table class="table table-bordered">
-        <tr>
-            <th width="20px" class="text-center">No</th>
-            <th width="280px"class="text-center">NIP</th>
-            <th width="280px"class="text-center">Nama Pegawai</th>
-            <th width="280px"class="text-center">Asal</th>
-            <th width="280px"class="text-center">Status</th>
-            <th width="280px"class="text-center">Action</th>
-        </tr>
-        @foreach ($pgw as $pegawai)
-        <tr>
-            <td class="text-center">{{ ++$i }}</td>
-            <td>{{ $pegawai->NIP }}</td>
-            <td>{{ $pegawai->NamaPegawai }}</td>
-            <td>{{ $pegawai->Asal }}</td>
-            <td>{{ $pegawai->Status }}</td>
-            <td class="text-center">
-                <form action="{{ route('pgw.destroy',$pegawai->id) }}" method="POST">
+    <div class="table-responsive">
+        <table class="ttable table-bordered table-md">
+            <tr>
+                <th width="20px" class="text-center">No</th>
+                <th width="280px"class="text-center">NIP</th>
+                <th width="280px"class="text-center">Nama Pegawai</th>
+                <th width="280px"class="text-center">Asal</th>
+                <th width="280px"class="text-center">Status</th>
+                <th width="280px"class="text-center">Action</th>
+            </tr>
 
-                   <a class="btn btn-info btn-sm" href="{{ route('pgw.show',$pegawai->id) }}">Show</a>
+            @foreach ($pgw as $pegawai)
 
-                    <a class="btn btn-primary btn-sm" href="{{ route('pgw.edit',$pegawai->id) }}">Edit</a>
+            <tr>
+                <td class="text-center">{{ ++$i }}</td>
+                <td>{{ $pegawai->NIP }}</td>
+                <td>{{ $pegawai->NamaPegawai }}</td>
+                <td>{{ $pegawai->Asal }}</td>
+                <td>{{ $pegawai->Status }}</td>
+                <td class="text-right">
+                    <form action="{{ route('pgw.destroy',$pegawai->id) }}" method="POST">
+
+                        <a class="btn btn-info btn-sm" href="{{ route('pgw.show',$pegawai->id) }}">Show</a>
+
+                        <a class="btn btn-primary btn-sm" href="{{ route('pgw.edit',$pegawai->id) }}">Edit</a>
 
                     @csrf
                     @method('DELETE')
 
-                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</button>
-                </form>
-            </td>
-        </tr>
-        @endforeach
-    </table>
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </table>
+    </div>
 
     {!! $pgw->links() !!}
 
