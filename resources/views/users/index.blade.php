@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <!-- Main Content -->
     <section class="section">
         <div class="section-header">
@@ -11,14 +12,15 @@
                 <div class="breadcrumb-item">Table</div>
             </div>
         </div>
+
         <div class="section-body">
             <h2 class="section-title">User Management</h2>
-
             <div class="row">
                 <div class="col-12">
                     @include('layouts.alert')
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12">
                     <div class="card card-primary">
@@ -38,6 +40,7 @@
                                     Search User</a>
                             </div>
                         </div>
+
                         <div class="card-body">
                             <div class="show-import" style="display: none">
                                 <div class="custom-file">
@@ -52,6 +55,7 @@
                                     </form>
                                 </div>
                             </div>
+
                             <div class="show-search mb-3" style="display: none">
                                 <form id="search" method="GET" action="{{ route('user.index') }}">
                                     <div class="form-row">
@@ -67,6 +71,7 @@
                                     </div>
                                 </form>
                             </div>
+
                             <div class="table-responsive">
                                 <table class="table table-bordered table-md">
                                     <tbody>
@@ -77,12 +82,15 @@
                                             <th>Created At</th>
                                             <th class="text-right">Action</th>
                                         </tr>
+
                                         @foreach ($users as $key => $user)
+
                                             <tr>
                                                 <td>{{ ($users->currentPage() - 1) * $users->perPage() + $key + 1 }}</td>
                                                 <td>{{ $user->name }}</td>
                                                 <td>{{ $user->email}}</td>
                                                 <td>{{ $user->created_at}}</td>
+
                                                 <td class="text-right">
                                                     <div class="d-flex justify-content-end">
                                                         <a href="{{ route('user.edit', $user->id) }}"
@@ -114,6 +122,7 @@
         </div>
     </section>
 @endsection
+
 @push('customScript')
     <script>
         $(document).ready(function() {

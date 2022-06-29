@@ -4,7 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Pegawai;
 use Illuminate\Http\Request;
+use App\Imports\PegawaiImport;
+use App\Exports\PegawaiExport;
+use App\Exports\UsersExport;
+use App\Imports\UsersImport;
 use Illuminate\Support\Facades\Hash;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PegawaiControllers extends Controller
 {
@@ -26,7 +31,7 @@ class PegawaiControllers extends Controller
      */
     public function create()
     {
-        //
+        // halaman tambah data pegawai
         return view('pgw.create');
     }
 
@@ -38,7 +43,7 @@ class PegawaiControllers extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // simpan data
         $request->validate([
             'NIP' => 'required',
             'NamaPegawai' => 'required',
@@ -104,5 +109,25 @@ class PegawaiControllers extends Controller
         $pgw->delete();
 
         return redirect()->route('pgw.index')->with('succes','Pegawai Berhasil di Hapus');
+    }
+
+    public function export()
+    {
+        // export data ke excel
+        return Excel::download(new UsersExport, 'pgw.xlsx');
+    }
+
+    public function import(Request $request)
+    {
+        // import excel ke data tables
+        $pgw = Excel::toCollection(new UsersImport, $request->import_file);
+        foreach ($pgw[0] as $pegawai) {
+            Pegawai::where('id', $pegawai[0])->update([
+                'name' => $pegawai[1],
+                'email' => $pegawai[2],
+                'password' => $pegawai[3],
+            ]);
+        }
+        return redirect()->route('pgw.index');
     }
 }
