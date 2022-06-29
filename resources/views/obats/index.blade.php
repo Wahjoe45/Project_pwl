@@ -23,9 +23,9 @@
 
         <tr>
             <th width="20px" class="text-center">No</th>
+            <th width="280px"class="text-center">Resep</th>
             <th width="280px"class="text-center">Nama</th>
             <th width="280px"class="text-center">Keterangan</th>
-            <th width="280px"class="text-center">Resep</th>
             <th width="280px"class="text-center">Action</th>
         </tr>
 
