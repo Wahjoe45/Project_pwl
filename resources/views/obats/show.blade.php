@@ -32,7 +32,7 @@
 
             <div class="form-group">
 
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
 
                 {{ $obat->nama }}
 
@@ -44,7 +44,7 @@
 
             <div class="form-group">
 
-                <strong>Keterangan:</strong>
+                <strong>Keterangan :</strong>
 
                 {{ $obat->keterangan }}
 
@@ -56,7 +56,7 @@
 
             <div class="form-group">
 
-                <strong>Resep:</strong>
+                <strong>Resep :</strong>
 
                 <img src="/resep/{{ $obat->resep }}" width="500px">
 

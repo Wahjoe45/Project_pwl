@@ -30,19 +30,19 @@
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
                 <input type="text" name="Nama" class="form-control" placeholder="NAMA" value="{{ $jdwl->Nama }}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Status:</strong>
+                <strong>Status :</strong>
                 <input type="text" name="Status" value="{{ $jdwl->Status }}" class="form-control" placeholder="STATUS">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>JamKerja:</strong>
+                <strong>Jam Kerja :</strong>
                 <textarea class="form-control" style="height:150px" name="JamKerja" placeholder="Content">{{ $jdwl->JamKerja }}</textarea>
             </div>
         </div>

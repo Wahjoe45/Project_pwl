@@ -29,19 +29,19 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
                 <input type="text" name="Nama" class="form-control" placeholder="NAMA">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Asal:</strong>
+                <strong>Asal :</strong>
                 <input type="text" name="Asal" class="form-control" placeholder="ASAL">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>TanggalKonsultasi:</strong>
+                <strong>Tanggal Konsultasi :</strong>
                 <input type="text" name="TanggalKonsultasi" class="form-control" placeholder="TanggalKonsultasi">
             </div>
         </div>

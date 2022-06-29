@@ -62,7 +62,7 @@
 
                 <div class="form-group">
 
-                    <strong>Nama:</strong>
+                    <strong>Nama :</strong>
 
                     <input type="text" name="nama" value="{{ $obat->nama }}" class="form-control" placeholder="Nama">
 
@@ -74,7 +74,7 @@
 
                 <div class="form-group">
 
-                    <strong>Keterangan:</strong>
+                    <strong>Keterangan :</strong>
 
                     <textarea class="form-control" style="height:150px" name="keterangan" placeholder="Keterangan">{{ $obat->keterangan }}</textarea>
 
@@ -86,7 +86,7 @@
 
                 <div class="form-group">
 
-                    <strong>Resep:</strong>
+                    <strong>Resep :</strong>
 
                     <input type="file" name="resep" class="form-control" placeholder="resep">
 

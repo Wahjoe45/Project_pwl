@@ -15,25 +15,25 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>NIP:</strong>
+                <strong>NIP :</strong>
                 {{ $pgw->NIP }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama Pegawai:</strong>
+                <strong>Nama Pegawai :</strong>
                 {{ $pgw->NamaPegawai }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Asal Pegawai:</strong>
+                <strong>Asal Pegawai :</strong>
                 {{ $pgw->Asal }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Status Pegawai:</strong>
+                <strong>Status Pegawai :</strong>
                 {{ $pgw->Status }}
             </div>
         </div>

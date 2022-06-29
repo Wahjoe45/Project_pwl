@@ -30,19 +30,19 @@
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
                 <input type="text" name="Nama" class="form-control" placeholder="NAMA" value="{{ $knsl->Nama }}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Asal:</strong>
+                <strong>Asal :</strong>
                 <input type="text" name="Asal" value="{{ $knsl->Asal }}" class="form-control" placeholder="ASAL">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>TanggalKonsultasi:</strong>
+                <strong>Tanggal Konsultasi :</strong>
                 <textarea class="form-control" style="height:150px" name="TanggalKonsultasi" placeholder="Content">{{ $knsl->TanggalKonsultasi }}</textarea>
             </div>
         </div>

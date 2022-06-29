@@ -15,19 +15,19 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama:</strong>
+                <strong>Nama :</strong>
                 {{ $knsl->Nama }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Asal:</strong>
+                <strong>Asal :</strong>
                 {{ $knsl->Asal }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>TanggalKonsultasi:</strong>
+                <strong>Tanggal Konsultasi :</strong>
                 {{ $knsl->TanggalKonsultasi }}
             </div>
         </div>

@@ -30,25 +30,25 @@
         <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>NIP:</strong>
+                <strong>NIP :</strong>
                 <input type="text" name="NIP" class="form-control" placeholder="NIP PEGAWAI" value="{{ $pgw->NIP }}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama Pegawai:</strong>
+                <strong>Nama Pegawai :</strong>
                 <input type="text" name="NamaPegawai" value="{{ $pgw->NamaPegawai }}" class="form-control" placeholder="NAMA PEGAWAI">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Asal:</strong>
+                <strong>Asal :</strong>
                 <textarea class="form-control" style="height:150px" name="Asal" placeholder="Content">{{ $pgw->Asal }}</textarea>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Status:</strong>
+                <strong>Status :</strong>
                 <textarea class="form-control" style="height:150px" name="Status" placeholder="Content">{{ $pgw->Status }}</textarea>
             </div>
         </div>
