@@ -21,9 +21,9 @@
     <table class="table table-bordered">
         <tr>
             <th width="20px" class="text-center">No</th>
-            <th>Nama</th>
+            <th width="280px"class="text-center">Nama</th>
             <th width="280px"class="text-center">Asal</th>
-            <th width="280px"class="text-center">TanggalKonsultasi</th>
+            <th width="280px"class="text-center">Tanggal Konsultasi</th>
             <th width="280px"class="text-center">Action</th>
         </tr>
         @foreach ($knsl as $konsultasi)
