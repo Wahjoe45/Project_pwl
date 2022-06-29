@@ -1,4 +1,4 @@
-@extends('obats.layout')
+@extends('layouts.app')
 
 
 
